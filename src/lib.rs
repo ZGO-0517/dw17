@@ -15,7 +15,7 @@ pub mod item;
 /// assert_eq!(dw17::show_item(), "Pretzels $1.25");
 /// ```
 pub fn show_item() -> String {
-    let item = Item::new("A1", "Pretzels", 125);
+    let item = crate::item::Item::new("A1", "Pretzels", 125);
     format!("{} ${}", item.name(), item.price_dollars())
 }
 
